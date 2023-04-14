@@ -1,0 +1,137 @@
+* {
+    font-family: sans-serif;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+  }
+  body {
+    background: #111;
+  }
+
+  section {
+    padding: 3rem 9%;
+    padding-top: 100px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .heading span {
+    color: #5030a7;
+    font-size: 2rem;
+  }
+  
+  .heading h1 {
+    font-size: 4rem;
+    color: #fff;
+  }
+  
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #ff5722;
+    border: 0.5rem solid #ff5722;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background: #ff5722;
+    color: #111;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+  }
+  
+  
+  
+  .logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .logo i {
+    color: #ff5722;
+    padding-right: 0.5rem;
+  }
+  
+  .table{
+    color: white;
+    font-size: 1.5rem;
+  }
+  .heading{
+    color: antiquewhite;
+    text-align: center ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 4rem;
+}
+  #menu-btn {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+  .popular .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  } 
+  
+.popular  .box {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    flex: 1 1 30rem;
+    position: relative;
+  }
+  
+  .popular .box h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+  }
+  .popular .box .content{
+    color: white;
+    display: block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+    background: #222;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  
+
+
+

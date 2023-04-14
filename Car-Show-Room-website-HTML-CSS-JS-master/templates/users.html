@@ -1,10 +1,44 @@
-<table border=1>
-    {% for user in userDetails %}
-    <tr>
-        <td>{{user[0]}}</td>
-        <td>{{user[1]}}</td>
-        <td>{{user[2]}}</td>
-        <td>{{user[3]}}</td>
-    </tr>
-    {% endfor %}
+
 </table>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Selling details</title>
+
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<!-- custom css file link  -->
+<link rel="stylesheet" href="../static/sell.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a data-aos-delay="150" href="#" class="logo">
+            <i class="fas fa-car-side"></i>CarPoint
+        </a>
+
+    </header>
+    <section class="popular" id="popular" data-aos-delay="150">
+        <b class="heading">Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone No &nbsp; Address
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Car
+        </b>
+        <table class="table" border=1>
+            {% for user in userDetails %}
+            <tr>
+                <td>{{user[0]}}</td>
+                <td>{{user[1]}}</td>
+                <td>{{user[2]}}</td>
+                <td>{{user[3]}}</td>
+            </tr>
+            {% endfor %}
+    </section>
+</body>
+
+</html>
