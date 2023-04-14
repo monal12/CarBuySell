@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercedes-Benz</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="../static/style1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">
+          <i class="fas fa-car-side"></i>CarPoint
+        </a>
+      
+      </header>
+      <section class="popular" id="popular" data-aos="fade-up" data-aos-delay="150">
+    
+          <div class="box">
+            <img src="../static/images/mercides.jpg" alt="" style="overflow:visible ;"/>
+            <h3>Mercedes-Benz</h3>
+            
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div>
+            <span class="price"><u style="text-decoration: underline;">Price: ₹1800k</u> </span>
+            <span class="content">The Mercedes-Benz New C-Class 1997-2022 has 4 Diesel Engine and 6 Petrol Engine on offer. The Diesel engine is 2143 cc and 1950 cc and 2148 cc and 2200 cc while the Petrol engine is 1991 cc and 1796 cc and 1950 cc and 2996 cc and 3982 cc and 6208 cc . It is available with Automatic & Manual transmission.Depending upon the variant and fuel type the New C-Class 1997-2022 has a mileage of . The New C-Class 1997-2022 is a 5 seater 4 cylinder car and has length of 4596mm, width of 1770mm and a wheelbase of 2760mm.</span>
+            </div>
+            <div class="center">
+              <button class="btn" id="show-login">order now</button>
+            </div>
+          </div>
+        </section>
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <form method="post" action="">
+          <div class="form">
+            <h2>Enter your details:</h2>
+            <div class="form-element">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-element">
+              <label for="phone">phone no</label>
+              <input type="text" id="phone" name="phone" placeholder="Enter your number">
+            </div>
+            <div class="form-element">
+              <label for="address">address</label>
+              <input type="text" id="address" name="address" placeholder="Enter your address">
+            </div>
+            <div class="form-element">
+              <button>Order now</button>
+            </div>
+          </div>
+        </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      
+        <script>
+          AOS.init({
+            duration: 800,
+            offset: 150,
+          });
+          document.querySelector("#show-login").addEventListener("click", function () {
+            document.querySelector(".popup").classList.add("active");
+          });
+          document.querySelector(".popup .close-btn").addEventListener("click", function () {
+            document.querySelector(".popup").classList.remove("active");
+          });
+        </script>
+      </body>
+      
+      </html>

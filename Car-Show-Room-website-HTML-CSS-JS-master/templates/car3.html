@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Land Range Rover</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="../static/style1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">
+          <i class="fas fa-car-side"></i>CarPoint
+        </a>
+      
+      </header>
+      <section class="popular" id="popular" data-aos="fade-up" data-aos-delay="150">
+    
+          <div class="box">
+            <img src="../static/images/range rover.jpg" alt="" />
+            <h3>Land Range Rover</h3>
+            
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div>
+            <span class="price"><u style="text-decoration: underline;">Price: ₹2000k</u> </span>
+            <span class="content"><b>Latest Update: </b>The variant-wise prices of the 2022 Range Rover are out and its deliveries are now underway across India.<br>
+
+                <b>Land Rover Range Rover Price:</b> The Range Rover is listed from Rs 2.32 crore (ex-showroom) onwards.<br>
+                
+                <b>Land Rover Range Rover Variants:</b> The fifth-gen Range Rover is now available in five trims: SE, HSE, Autobiography, First Edition and SV.<br>
+                
+                <b>Land Rover Range Rover Seating Capacity:</b> Land Rover is offering the SUV in multiple seating configurations: 4-seater, 5-seater, and 7-seater.<br>
+                
+                <b>Land Rover Range Rover Engine and Transmission:</b> In terms of powertrains, it is available with a mix of petrol and diesel engines, both with 48V mild-hybrid tech. All engines are mated to an 8-speed automatic transmission. The 3-litre six-cylinder petrol makes 400PS/550Nm and the 3-litre diesel produces 351PS/700Nm. Its flagship variant is equipped with the 4.4-litre twin-turbo V8 producing 530PS/750Nm.<br>
+                
+                <b>Land Rover Range Rover Features:</b> Range Rover gets a 13.7-inch digital driver’s display, a 13.1-inch touchscreen infotainment system, a 1600W Meridian sound system, and Amazon-Alexa connectivity.<br>
+                
+                <b>Land Rover Range Rover Rivals:</b> It rivals the Lexus LX and Mercedes-Benz Maybach GLS. The sporty variant with the twin-turbo V8 also takes on the Aston Martin DBX and Bentley Bentayga.</span>
+            </div>
+            <div class="center">
+              <button class="btn" id="show-login">order now</button>
+            </div>
+          </div>
+        </section>
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <form method="post" action="">
+          <div class="form">
+            <h2>Enter your details:</h2>
+            <div class="form-element">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-element">
+              <label for="phone">phone no</label>
+              <input type="text" id="phone" name="phone" placeholder="Enter your number">
+            </div>
+            <div class="form-element">
+              <label for="address">address</label>
+              <input type="text" id="address" name="address" placeholder="Enter your address">
+            </div>
+            <div class="form-element">
+              <button>Order now</button>
+            </div>
+          </div>
+        </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      
+        <script>
+          AOS.init({
+            duration: 800,
+            offset: 150,
+          });
+          document.querySelector("#show-login").addEventListener("click", function () {
+            document.querySelector(".popup").classList.add("active");
+          });
+          document.querySelector(".popup .close-btn").addEventListener("click", function () {
+            document.querySelector(".popup").classList.remove("active");
+          });
+        </script>
+      </body>
+      
+      </html>

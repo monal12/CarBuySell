@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nissan X-Trail</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="../static/style1.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">
+          <i class="fas fa-car-side"></i>CarPoint
+        </a>
+      
+      </header>
+      <section class="popular" id="popular" data-aos="fade-up" data-aos-delay="150">
+    
+          <div class="box">
+            <img src="../static/images/Nissan.jpg" alt="" />
+            <h3>Nissan X-Trail</h3>
+            
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div>
+            <span class="price"><u style="text-decoration: underline;">Price: ₹1900k</u> </span>
+            <span class="content"><b>Latest Update:</b> Nissan has showcased the fourth-generation X-Trail in India, which will undergo testing for now and will be launched soon after.<br>
+
+                <b>Launch:</b> The full-size Nissan SUV is expected to arrive in India by May 2023.<br>
+                
+                <b>Price:</b> It is expected to be priced from Rs 40 lakh onwards (ex-showroom).<br>
+                
+                <b>Engine and Transmission:</b> Internationally, the X-Trail comes equipped with a 1.5-litre turbo-petrol engine (mated to a 12-volt mild-hybrid tech) with an output of 163PS and 300Nm. The strong-hybrid variant is rated at 204PS (2WD) and 213PS (4WD).<br>
+                
+                <b>Features:</b> The India-spec X-Trail could get a 12.3-inch touchscreen infotainment system with wireless Apple CarPlay, a head-up display, dual-zone climate control, heated front seats and eight-way adjustable driver seat.<br>
+                
+                <b>Safety:</b> Its safety package may include Advanced Driver-Assistance Systems (ADAS) functionalities like lane-keep assist and departure warning, traffic sign recognition, adaptive cruise control and electronic stability control.<br>
+                
+                <b>Rivals:</b> The Nissan X-Trail will take on the likes of Toyota Fortuner, MG Gloster, Isuzu MU-X, and Mahindra Alturas G4. </span>
+            </div>
+            <div class="center">
+              <button class="btn" id="show-login">order now</button>
+            </div>
+          </div>
+        </section>
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <form method="post" action="">
+          <div class="form">
+            <h2>Enter your details:</h2>
+            <div class="form-element">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-element">
+              <label for="phone">phone no</label>
+              <input type="text" id="phone" name="phone" placeholder="Enter your number">
+            </div>
+            <div class="form-element">
+              <label for="address">address</label>
+              <input type="text" id="address" name="address" placeholder="Enter your address">
+            </div>
+            <div class="form-element">
+              <button>Order now</button>
+            </div>
+          </div>
+        </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      
+        <script>
+          AOS.init({
+            duration: 800,
+            offset: 150,
+          });
+          document.querySelector("#show-login").addEventListener("click", function () {
+            document.querySelector(".popup").classList.add("active");
+          });
+          document.querySelector(".popup .close-btn").addEventListener("click", function () {
+            document.querySelector(".popup").classList.remove("active");
+          });
+        </script>
+      </body>
+      
+      </html>
